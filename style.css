@@ -1,0 +1,83 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+#content{
+    height: 100%;
+    /* position: relative; */
+}
+.page{
+    /* position: relative; */
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 88px;
+
+    color: white;
+
+}
+.contact{
+    color: white;
+    font-size: 3rem;
+}
+
+#course-work{
+    background: blue;
+
+}
+#projects{
+    background: orange;
+} 
+#work-experience{
+    background: red;
+}
+
+
+
+.page img{
+    width: 40%;
+    height: auto;
+}
+#about-me p {
+    /* font-size: 1rem; */
+    line-height: 2rem;
+}
+
+#about-me .contacts{
+    font-size: 0.3rem;
+}
+/* Small devices (landscape phones, 544px and up) */
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .page img{
+        width: 70%;
+    } 
+    #about-me p {
+
+        line-height: 2.2rem;
+        font-size: 1.4vw;
+    }
+    .contact{
+        font-size: 4rem;
+    }
+} 
+/* @media (min-width: 1200px) {  
+    #about-me p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .contact{
+        font-size: 2rem;
+    }
+} */
