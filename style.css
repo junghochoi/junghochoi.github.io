@@ -3,25 +3,47 @@ html{
 }
 
 body{
-    background-image: url("bg2.jpg");
+    background-image: url("assets/bg2.jpg");
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-brand{
+   font-family: 'Julius Sans One', sans-serif;
+   font-size: 1.7rem;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: orange;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.bg-dark{
+    background: #20202b!important;
+}
 
 
 
 #content{
     height: 100%;
-    /* position: relative; */
-}
-.page{
-    /* position: relative; */
-    min-height: 100vh;
-    width: 100%;
-    padding-top: 88px;
 
+}
+.vertical-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: auto; */
+}
+
+.page{
+    min-height: 100vh;
+    padding-top: 88px;
     color: white;
+    text-align: center;
 
 }
 .contact{
@@ -33,51 +55,120 @@ body{
     background: blue;
 
 }
-#projects{
-    background: orange;
-} 
-#work-experience{
-    background: red;
+
+
+
+/* Default Extra small */
+h1{
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-
-
-.page img{
-    width: 40%;
+#about-me img{
     height: auto;
+    width: 50%;
 }
 #about-me p {
-    /* font-size: 1rem; */
-    line-height: 2rem;
+    line-height: 1.3rem;
 }
 
-#about-me .contacts{
-    font-size: 0.3rem;
+#about-me .contact{
+    font-size: 4rem;
 }
+
+#projects .card{
+    margin-top: 30px;
+}
+
+#projects img{
+    height: auto;
+    width: 50%;
+    margin: 5% auto;
+} 
+
+
+
+
+.carousel-item{
+    height: 60vh;
+    background: #20202b;
+
+}
+
+a.carousel-control-next{
+    width: 5%;
+}
+a.carousel-control-prev{
+    width: 5%;
+}
+
+.carousel-item img{
+    margin-bottom: 10px;
+}
+
+#myregistry {
+    width: 50%;
+    height: auto;
+}
+#prestige{
+    width: 100%;
+    height: auto;
+}
+#tutor{
+    width: 70%;
+    height: auto;
+}
+
+.carousel-content #responsibility {
+    text-align: left;
+}
+
+
+
 /* Small devices (landscape phones, 544px and up) */
 
+
+@media (min-width: 544px){
+    #about-me img{
+        width: 60%;
+    }
+    #about-me .contact{
+        font-size: 8rem;
+    }
+    #projects img{
+        width:70%;
+    }
+
+}
+@media (min-width: 768px) { 
+
+}
 
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .page img{
-        width: 70%;
-    } 
+ 
     #about-me p {
 
         line-height: 2.2rem;
         font-size: 1.4vw;
     }
-    .contact{
-        font-size: 4rem;
+    #about-me .contact{
+        font-size: 8rem;
     }
+
+
 } 
-/* @media (min-width: 1200px) {  
-    #about-me p {
-        font-size: 1.8rem;
-        line-height: 2.4rem;
+
+@media(min-width: 1200px){
+    .card{
+        width: 17rem;
+        margin: 0 auto;
     }
-    .contact{
-        font-size: 2rem;
+    #work-experience{
+        font-size: 1.5vw;
     }
-} */
+    #work-experience img{
+        width: 15vw;
+        height: auto;
+    }
+}
