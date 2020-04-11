@@ -29,14 +29,12 @@ body{
 
 #content{
     height: 100%;
-
 }
 .vertical-center{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* margin: auto; */
 }
 
 .page{
@@ -75,6 +73,10 @@ h1{
     font-size: 4rem;
 }
 
+
+
+
+
 #projects .card{
     margin-top: 30px;
 }
@@ -85,41 +87,47 @@ h1{
     margin: 5% auto;
 } 
 
+/* 
+.carousel-content #responsibility {
+    text-align: left;
+}
 
 
 
 .carousel-item{
-    height: 60vh;
+    min-height: 60vh;
     background: #20202b;
-
 }
 
-a.carousel-control-next{
+
+
+.carousel-item img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ */
+ a.carousel-control-next{
     width: 5%;
 }
 a.carousel-control-prev{
     width: 5%;
 }
 
-.carousel-item img{
-    margin-bottom: 10px;
+.carousel-item{
+    min-height: 60vh;;
 }
 
-#myregistry {
+#myregistry{
     width: 50%;
     height: auto;
 }
+
 #prestige{
-    width: 100%;
-    height: auto;
-}
-#tutor{
     width: 70%;
     height: auto;
-}
-
-.carousel-content #responsibility {
-    text-align: left;
+} 
+#tutor{
+    width: 80%;
 }
 
 
@@ -128,11 +136,10 @@ a.carousel-control-prev{
 
 
 @media (min-width: 544px){
-    #about-me img{
-        width: 60%;
-    }
+
+  
     #about-me .contact{
-        font-size: 8rem;
+        font-size: 6rem;
     }
     #projects img{
         width:70%;
@@ -147,6 +154,10 @@ a.carousel-control-prev{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
  
+    #about-me img {
+        width: 100%;
+        height: auto;
+    }
     #about-me p {
 
         line-height: 2.2rem;
@@ -155,8 +166,6 @@ a.carousel-control-prev{
     #about-me .contact{
         font-size: 8rem;
     }
-
-
 } 
 
 @media(min-width: 1200px){
@@ -165,7 +174,7 @@ a.carousel-control-prev{
         margin: 0 auto;
     }
     #work-experience{
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     #work-experience img{
         width: 15vw;
