@@ -26,7 +26,9 @@ body{
 }
 
 
-
+.font-pink{
+    color: pink;
+}
 #content{
     height: 100%;
 }
@@ -41,7 +43,7 @@ body{
     min-height: 100vh;
     padding-top: 88px;
     color: white;
-    text-align: center;
+   
 
 }
 .contact{
@@ -55,9 +57,12 @@ body{
 }
 
 
+.hidden{
+    display: none;
+}
 
 /* Default Extra small */
-h1{
+h1, h3{
     font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -74,10 +79,36 @@ h1{
 }
 
 
+.work {
 
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #20202c;
+}
+
+.work-title, .work-dates{
+    font-size: 1.2rem;
+}
+
+
+.underline{
+    text-decoration: underline;
+}
+
+
+.work-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.work-list{
+    font-size: 1.2rem;
+}
 
 
 #projects .card{
+    text-align: center;
     margin-top: 30px;
 }
 
@@ -87,48 +118,6 @@ h1{
     margin: 5% auto;
 } 
 
-/* 
-.carousel-content #responsibility {
-    text-align: left;
-}
-
-
-
-.carousel-item{
-    min-height: 60vh;
-    background: #20202b;
-}
-
-
-
-.carousel-item img{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
- */
- a.carousel-control-next{
-    width: 5%;
-}
-a.carousel-control-prev{
-    width: 5%;
-}
-
-.carousel-item{
-    min-height: 60vh;;
-}
-
-#myregistry{
-    width: 50%;
-    height: auto;
-}
-
-#prestige{
-    width: 70%;
-    height: auto;
-} 
-#tutor{
-    width: 80%;
-}
 
 
 
@@ -136,15 +125,12 @@ a.carousel-control-prev{
 
 
 @media (min-width: 544px){
-
-  
     #about-me .contact{
         font-size: 6rem;
     }
     #projects img{
         width:70%;
     }
-
 }
 @media (min-width: 768px) { 
 
@@ -173,11 +159,5 @@ a.carousel-control-prev{
         width: 17rem;
         margin: 0 auto;
     }
-    #work-experience{
-        font-size: 1.2vw;
-    }
-    #work-experience img{
-        width: 15vw;
-        height: auto;
-    }
+
 }
