@@ -231,3 +231,19 @@ or remove everything to remove the cursor*/
     border-right: 10px solid #BF0505;
     padding: 0 10px;
 }
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Change this to 100% if you want to edit it */
+    height: 100%;
+}
